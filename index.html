@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Generate a Random Password
+		using JavaScript
+	</title>
+</head>
+
+<body style="text-align:center;">
+
+
+
+	<div>
+		<input type="text" id="my247">
+	</div>
+
+	<button onclick="generatePassword('my247',10)">
+		Click Here
+	</button>
+	<br>
+
+	<script>
+		/* Function to generate password */
+		function generatePassword(Id, PassLength) {
+			var id = document.getElementById(Id);
+			var pass = '';
+			var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+				'abcdefghijklmnopqrstuvwxyz0123456789@#$';
+
+			for (let i = 1; i <= PassLength; i++) {
+				var char = Math.floor(Math.random()
+					* str.length + 1);
+
+				pass += str.charAt(char)
+			}
+			id.value = pass;
+		}
+
+
+	</script>
+</body>
