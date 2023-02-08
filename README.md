@@ -1,4 +1,4 @@
-# function-to-generate-random-password-for-a-specific-length-and-input-id
+# Function-to-generate-random-password-for-a-specific-length-and-input-id
 
 This is Javascript Function to Generate Random Password. 
 
